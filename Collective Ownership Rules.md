@@ -75,6 +75,8 @@ Example:
 ## Collective decision
 Taking a collective decision can be done in many ways. The only rule is that the decision power of one person is proportional to the share owned.
 The following are suggestions on how to take decision and describes parameters that can be tuned by each collective. There can be one single way to decide for all kind of decisions, or have different parameters for different kind of decisions, depending of the importance. More important decisions could have higher requirements.
+### Synchronous and asynchronous decisions
+Decisions can be taken instantly if they take place in a meeting, or done asynchronously via messages. It's a question of balance. Meetings are more complex to organize, but then can make decision making faster. On the other side asynchronous decision making is more convenient, and leave time for reflexion, but slower.
 ### Proposing a decision
 Anyone from the group can propose a decision. It can be during a live meeting or asychronously, via a written communication channel.
 ```
@@ -85,28 +87,48 @@ Example:
 Members vote for the decision; if the cumulated shares of the voters reach a certain value, the decision is taken. The required approval rate, proportional to shares ownership can be set to 100% of the voters, or less to prevent blocking.
 ```
 Example:
-
+- The collective has decided that a 80% approval rate is required for a decision to pass.
+- After votes are cast, cumulated shared of all in favor only reach 60%. The proposal is rejected.
 ```
 ### Transferable decision power
 One can decide to transfer it's decision power to another member, or only to do so in case of not answering.
+```
+Example:
+Alice is busy and sometimes don't want to get too involved in decisions. She transfers her voting power to Bob in case of not answering.
+When a vote deadline arrives, and she has not cast her vote, the vote of Bob now worth for his share (20%) and the one of Alice (30%) combined.
+```
 ### Delay
-There is a delay decided in advance for voting on a decision, to prevent stalling. Passed this delay
-# In practice
-## What to record
-## How to communicate
----
-# rules
-## shares
-value: buying value, with décote.
-all income and cost are shared to the proportion of the shares
-shares can be rebalanced at any moment
-one enters the collective by buying shares
-one exits the collective when they have no share
-decisions are made by vote to the proportion of the shares.
-vote passes at a proportion
-100%, 80%, 50%
-decision power can be transfered
-vote is null after a certain time of not answering so there is no blocking
+There is a delay decided in advance for voting on a decision, to prevent stalling. Passed this delay, votes that are not cast are either automatically transfered to someone else if previously declared so, or nullified.
+```
+Example:
+- Denis proposes to get a storage for all the material. He posts a proposal on the collective chat. The collective has a standard of one week for asynchronous proposals to be voted. There are some talks about it, and the members send their votes. One week after, the collective lead count the votes, taking into account vote transfers and missing votes. The proposal reaches more than 80% of the voting shares; it is accepted.
+```
+### Execution
+It's a collective decision to find out who does what needs to be done. A decision is only good if there is someone to execute it. If the thing to do involve significant amount of work, one can imagine a compensation for the member who does it.
+## Using the assets
 
-# in practice
-## register
+**continue from here**
+### Asking for usage
+...
+### Rent for usage
+...
+### Risk and damages
+...
+## Revaluating the assets
+...
+
+# In practice
+## Keeping records
+The core information to be recorded is:
+- A list of assets, with their valuation and localization
+- A list of members with their respective shares, and contact.
+Optional but probably wise to record too:
+- An accounting register for settlements
+- History of operations. Shares, Income and Expenses.
+- Historical of proposals, votes and decisions.
+
+The records must be accesible by all members. It's probably wise to have historical backups, to have one person in charge of maintaining the record at one time. This person is chosen by the collective, and can be replaced, maybe on a regular basis.
+## How to communicate
+Everyone is on a group chat. Possibly with different channels for different subjects. A shared document space can also be used for keeping the records.
+## Lead
+The collective probably needs one lead to orchestrate the operations and decisions. The lead follow the rules of the collective, and only in case of doubt, has authority to take a decision. The lead is chosen by the collective, and can be replaced, maybe on a regular basis.
